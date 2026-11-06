@@ -1,4 +1,4 @@
-# Fire AI Take-Home Assignment: Project A (Income Tax Engine)
+# Fire AI Assignment: Project A (Income Tax Engine)
 
 > **Mission**: Build an Indian salaried income-tax engine supporting FY 2024–25 (AY 2025–26) and FY 2025–26 (AY 2026–27) under both Old and New regimes, evaluate three architectural paradigms (Rules vs LLMs), handle natural-language input, and provide reproducible benchmarks with complete legal traceability.
 
