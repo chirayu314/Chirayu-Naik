@@ -1,0 +1,63 @@
+{
+  "financial_year": "2024-25",
+  "assessment_year": "2025-26",
+  "provenance": "AUDITED_PRE_COMPILED",
+  "cess_rate": 0.04,
+  "statutory_rounding_multiple": 10,
+  "old_regime": {
+    "regime": "old",
+    "standard_deduction": 50000.0,
+    "allows_hra": true,
+    "allows_80c": true,
+    "allows_80ccd_1b": true,
+    "allows_80d": true,
+    "allows_home_loan": true,
+    "slabs": [
+      {"upper_limit": 250000.0, "rate": 0.0},
+      {"upper_limit": 500000.0, "rate": 0.05},
+      {"upper_limit": 1000000.0, "rate": 0.20},
+      {"upper_limit": -1.0, "rate": 0.30}
+    ],
+    "rebate_87a": {
+      "income_threshold": 500000.0,
+      "max_rebate": 12500.0,
+      "marginal_relief": false,
+      "marginal_relief_threshold": null
+    },
+    "surcharge_brackets": [
+      {"threshold": 5000000.0, "rate": 0.10},
+      {"threshold": 10000000.0, "rate": 0.15},
+      {"threshold": 20000000.0, "rate": 0.25},
+      {"threshold": 50000000.0, "rate": 0.37}
+    ]
+  },
+  "new_regime": {
+    "regime": "new",
+    "standard_deduction": 75000.0,
+    "allows_hra": false,
+    "allows_80c": false,
+    "allows_80ccd_1b": false,
+    "allows_80d": false,
+    "allows_home_loan": false,
+    "slabs": [
+      {"upper_limit": 300000.0, "rate": 0.0},
+      {"upper_limit": 700000.0, "rate": 0.05},
+      {"upper_limit": 1000000.0, "rate": 0.10},
+      {"upper_limit": 1200000.0, "rate": 0.15},
+      {"upper_limit": 1500000.0, "rate": 0.20},
+      {"upper_limit": -1.0, "rate": 0.30}
+    ],
+    "rebate_87a": {
+      "income_threshold": 700000.0,
+      "max_rebate": 25000.0,
+      "marginal_relief": true,
+      "marginal_relief_threshold": 700000.0
+    },
+    "surcharge_brackets": [
+      {"threshold": 5000000.0, "rate": 0.10},
+      {"threshold": 10000000.0, "rate": 0.15},
+      {"threshold": 20000000.0, "rate": 0.25}
+    ]
+  }
+}
+

@@ -1,0 +1,116 @@
+{
+  "authority": "Income Tax Department, Government of India / Ministry of Finance",
+  "statutes": [
+    {
+      "act": "Income-tax Act, 1961",
+      "provisions": [
+        {
+          "section": "16(ia)",
+          "description": "Standard deduction for salaried individuals",
+          "rules": {
+            "old_regime": 50000,
+            "new_regime_fy_2024_25": 75000,
+            "new_regime_fy_2025_26": 75000
+          },
+          "statutory_note": "Amended by Finance (No. 2) Act, 2024 raising new-regime standard deduction to Rs. 75,000 w.e.f. AY 2025-26."
+        },
+        {
+          "section": "10(13A) read with Rule 2A",
+          "description": "House Rent Allowance (HRA) exemption",
+          "formula": "Minimum of: (1) Actual HRA received, (2) Rent paid minus 10% of salary, (3) 50% of salary (metro: Mumbai, Delhi, Kolkata, Chennai) or 40% (non-metro)",
+          "salary_definition": "Basic salary + dearness allowance (forming part of retirement benefits)",
+          "applicability": "Old tax regime only"
+        },
+        {
+          "section": "80C",
+          "description": "Deduction for contributions to PPF, EPF, ELSS, life insurance premiums, home loan principal, etc.",
+          "cap": 150000,
+          "applicability": "Old tax regime only"
+        },
+        {
+          "section": "80CCD(1B)",
+          "description": "Additional deduction for contribution to National Pension System (NPS)",
+          "cap": 50000,
+          "applicability": "Old tax regime only"
+        },
+        {
+          "section": "80D",
+          "description": "Deduction for health insurance premium and preventive health check-up",
+          "limits": {
+            "self_family_non_senior": 25000,
+            "self_family_senior": 50000,
+            "parents_non_senior": 25000,
+            "parents_senior": 50000,
+            "max_combined": 100000
+          },
+          "applicability": "Old tax regime only"
+        },
+        {
+          "section": "24(b)",
+          "description": "Interest on borrowed capital for self-occupied house property",
+          "cap": 200000,
+          "applicability": "Old tax regime only; under Section 115BAC(2), loss under 'Income from house property' cannot be set off against salary"
+        },
+        {
+          "section": "87A",
+          "description": "Rebate of income-tax in case of certain individuals",
+          "fy_2024_25": {
+            "old_regime": {
+              "threshold": 500000,
+              "max_rebate": 12500,
+              "marginal_relief": false
+            },
+            "new_regime": {
+              "threshold": 700000,
+              "max_rebate": 25000,
+              "marginal_relief": true,
+              "marginal_relief_rule": "Tax payable shall not exceed total income exceeding Rs. 7,00,000"
+            }
+          },
+          "fy_2025_26": {
+            "old_regime": {
+              "threshold": 500000,
+              "max_rebate": 12500,
+              "marginal_relief": false
+            },
+            "new_regime": {
+              "threshold": 1200000,
+              "max_rebate": 60000,
+              "marginal_relief": true,
+              "marginal_relief_rule": "Tax payable shall not exceed total income exceeding Rs. 12,00,000 (Finance Act 2025)"
+            }
+          }
+        },
+        {
+          "section": "115BAC",
+          "description": "Special provisions governing the new tax regime for individuals and HUF",
+          "statutory_note": "Default tax regime from AY 2024-25 onwards. Rate slabs updated by Finance (No. 2) Act 2024 and Finance Act 2025."
+        },
+        {
+          "section": "Surcharge and Marginal Relief",
+          "thresholds": [
+            {"limit": 5000000, "rate": 0.10},
+            {"limit": 10000000, "rate": 0.15},
+            {"limit": 20000000, "rate": 0.25},
+            {"limit": 50000000, "rate_old": 0.37, "rate_new": 0.25}
+          ],
+          "marginal_relief_rule": "Total tax payable plus surcharge shall not exceed (tax plus surcharge payable on threshold income) plus (total income minus threshold income)"
+        },
+        {
+          "section": "Health and Education Cess",
+          "rate": 0.04,
+          "base": "Tax payable plus applicable surcharge"
+        },
+        {
+          "section": "288A",
+          "description": "Rounding off of total income to nearest multiple of Rs. 10"
+        },
+        {
+          "section": "288B",
+          "description": "Rounding off of tax payable to nearest multiple of Rs. 10"
+        }
+      ]
+    }
+  ]
+}
+

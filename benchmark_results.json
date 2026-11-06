@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-11-06T13:39:33Z",
+  "approaches": {
+    "approach_1_hand_coded_rules": {
+      "status": "MEASURED",
+      "accuracy_rupee_exact_pct": 100.0,
+      "repeatability_10_runs_deterministic": true,
+      "latency_mean_ms": 0.0078,
+      "latency_median_ms": 0.0068,
+      "latency_p95_ms": 0.0114,
+      "cost_per_1000_requests_usd": 0.0,
+      "failure_rate_pct": 0.0,
+      "explainability": "Complete (every rupee traces to specific Section & Rule)",
+      "samples_tested": 170
+    },
+    "approach_2_llm_query_time": {
+      "status": "MEASURED_LIVE",
+      "accuracy_rupee_exact_pct": 60.0,
+      "repeatability_10_runs_deterministic": false,
+      "latency_mean_ms": 1693.62,
+      "latency_median_ms": 1794.21,
+      "latency_p95_ms": 1852.37,
+      "cost_per_1000_requests_usd": 0.234,
+      "failure_rate_pct": 0.0,
+      "explainability": "Moderate (Natural language reasoning; not formally auditable to byte)",
+      "samples_tested": 5
+    },
+    "approach_3_llm_compiled_rules": {
+      "status": "MEASURED",
+      "accuracy_rupee_exact_pct": 100.0,
+      "repeatability_10_runs_deterministic": true,
+      "latency_mean_ms": 0.0278,
+      "latency_median_ms": 0.0146,
+      "latency_p95_ms": 0.0251,
+      "cost_per_1000_requests_usd": 0.0,
+      "failure_rate_pct": 0.0,
+      "explainability": "High (Declarative AST rule schema + Section mapping)",
+      "provenance": "AUDITED_PRE_COMPILED",
+      "samples_tested": 170
+    }
+  }
+}
